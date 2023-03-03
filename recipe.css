@@ -12,9 +12,9 @@ body {
 
 div.content {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow:0px 0px 10px 10px rgba(15, 15, 15, 0.15);
     overflow: visible;
     
@@ -79,19 +79,19 @@ table.info {
     width: 100%;
     color: white;
     background-color: #6c8290c0;
-    height: 80px;
+    height: 50px;
 }
 
 table.info td {
     text-align: center;
     vertical-align: top;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 table.info th {
     vertical-align: bottom;
     padding-bottom: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 img.info {
@@ -103,7 +103,7 @@ img.info {
 }
 div.col1, div.col2 {
     margin-top:10px;
-    width: 45%;
+    width: 100%;
 }
 
 div.col h2 {
@@ -116,12 +116,12 @@ div.col h2 {
 
 div.col1 {
     
-    margin-right: 10%;
+    /*margin-right: 10%;*/
     display: inline-block;
 }
 
 div.col2 {
- float: right;
+ /*float: right;*/
  
 }
 div.ingredients {
@@ -165,4 +165,52 @@ table.instractions td {
 table.instractions tr {
 height: 40px;
 }
+/*desktop styl*/
+@media only screen and (min-width: 768px) {
+    div.content {
+        
+        margin: 60px 10% 80px 10%;
+        padding: 0 30px 30px 30px;
+        min-width: 350px;
 
+    }
+    table.info {
+    
+   
+    height: 80px;
+    }
+
+    table.info td {
+        
+        font-size: 14px;
+    }
+
+    table.info th {
+       
+        font-size: 16px;
+    }
+    div.col1, div.col2 {
+       
+        width: 45%;
+    }
+    
+  
+    div.col1 {
+        
+        margin-right: 10%;
+       
+    }
+    
+    div.col2 {
+     float: right;
+     
+    }
+}
+@media only screen and (min-width: 900px) {
+    div.content {
+        
+        
+        min-width: 650px;
+
+    }
+}
